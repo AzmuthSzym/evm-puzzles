@@ -23,3 +23,6 @@ My solutions
 
 ## Puzzle 2
 <code>CODESIZE</code> returns the size of the code currently running (0xA). <code>JUMPDEST</code> is sixth so the answer should be something that 10 - x = 6, which is 4. So, <code>CALLVALUE</code> pushes 4 to stack, <code>CODESIZE</code> pushes 10, <code>SUB</code> does the math and leaves the jump destination on stack so that <code>JUMP</code> can execute properly
+
+## Puzzle 3
+<code>CALLDATASIZE</code> gets the size of the input. <code>JUMPDEST</code> is fourth, which means that the size of the data sent should equal to four. It is worth noting that Calldata should be a hexadecimal string with 2 digits per byte.
