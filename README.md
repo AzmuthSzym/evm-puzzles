@@ -26,3 +26,6 @@ My solutions
 
 ## Puzzle 3
 <code>CALLDATASIZE</code> gets the size of the input. <code>JUMPDEST</code> is fourth, which means that the size of the data sent should equal to four. It is worth noting that Calldata should be a hexadecimal string with 2 digits per byte.
+
+## Puzzle 4
+Very similar to puzle 2. The operation is <code>XOR</code>. <code>CODESIZE</code> is 0xC (0b1100), <code>JUMPDEST</code> is equal to 0xA (0b1010) and is the result of a XOR operation - which looks at differences across bits (its the simplest explanation of XOR in my opinion). The answer is 0x6 (0b0110)
