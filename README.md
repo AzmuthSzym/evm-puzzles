@@ -33,3 +33,5 @@ Very similar to puzle 2. The operation is <code>XOR</code>. <code>CODESIZE</code
 ## Puzzle 5
 The first three operations execute <code>CALLVALUE</code> squared. Later, this value is comapred using <code>EQ</code> to 0x0100 (256). Only if this comparison is true the jump will happen. 256 = 16^2. 16 -> 0x10, and this is the value we should send
 
+## Puzzle 6
+<code>CALLDATALOAD</code> gets input data of current environment. Looking up EVM codes we can see that the data is 32-byte value. <code>JUMPDEST</code> is at 0x0A, so we have to send this position in the correct format: <code>0x000000000000000000000000000000000000000000000000000000000000000A</code>
