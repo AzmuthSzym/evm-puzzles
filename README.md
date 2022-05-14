@@ -29,3 +29,7 @@ My solutions
 
 ## Puzzle 4
 Very similar to puzle 2. The operation is <code>XOR</code>. <code>CODESIZE</code> is 0xC (0b1100), <code>JUMPDEST</code> is equal to 0xA (0b1010) and is the result of a XOR operation - which looks at differences across bits (its the simplest explanation of XOR in my opinion). The answer is 0x6 (0b0110)
+
+## Puzzle 5
+The first three operations execute <code>CALLVALUE</code> squared. Later, this value is comapred using <code>EQ</code> to 0x0100 (256). Only if this comparison is true the jump will happen. 256 = 16^2. 16 -> 0x10, and this is the value we should send
+
